@@ -1,12 +1,12 @@
-# _Simple Bar Chart_
+# _Simple Line Chart_
 
-#### _{Displays 10 years of Detroit Tigers win counts graphically}, {3/31/2016}_
+#### _{Displays 50 years of CO2 and global temp numbers graphically}, {4/1/2016}_
 
 #### By _**{Chris Underwood}**_
 
 ## Description
 
-_{Static chart that prints the number of wins for the Detroit Tigers over a ten year period by year. Data is stored in a series of arrays in the script. Adapted in part from Data Visualization with JavaScript by Stephen A. Thomas}_
+_{Static chart that shows the relationship between CO2 in the atmosphere and the rise in global temps. Data is stored in a series of arrays in the script. Adapted in part from Data Visualization with JavaScript by Stephen A. Thomas}_
 
 ## Setup/Installation Requirements
 Download the files.
