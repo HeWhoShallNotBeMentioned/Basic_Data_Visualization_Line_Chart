@@ -121,10 +121,13 @@
         [ 2010,  0.6621 ],
         [ 2011,  0.5362 ],
     ];
-    
+
     Flotr.draw(
       document.getElementById("chart"),
-      [{data: co2, lines: {show:true}}]
+      [
+        {data: co2, lines: {show:true}},
+        {data: temp, lines: {show:true}, yaxis: 2}
+      ]
     );
 
   };
