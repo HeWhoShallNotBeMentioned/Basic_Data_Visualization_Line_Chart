@@ -127,11 +127,12 @@
     Flotr.draw(
       document.getElementById("chart"),
       [
-        {data: zero, lines: {show:true, lineWidth:1}, yaxis:2, shadowSize: 0, color: "#545454"},
-        {data: co2, lines: {show:true}},
-        {data: temp, lines: {show:true}, yaxis: 2}
+        {data: zero, label:"20<sup>th</sup>-Century Baseline Temperature", lines: {show:true, lineWidth:1}, yaxis:2, shadowSize: 0, color: "#ff6666"},
+        {data: co2, label:"Yearly Temperature Difference (C)",lines: {show:true}},
+        {data: temp, label:"CO<sub>2</sub> Concenration (ppm)",lines: {show:true}, yaxis: 2}
       ],
       {
+        title: "Global Temperature and CO<sub>2</sub> Concenration (NOAA Data)",
         grid: {horizontalLines: false, verticalLines: false},
         yaxis: {min: 300, max: 400},
         y2axis: {min: -0.15, max: 0.69}
