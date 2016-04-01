@@ -9,6 +9,8 @@
     <script type="text/javascript" src="js/flotr2.js"> </script>
     <script>
 
+      window.onload = function () {
+
     var co2 = [
         [ 1959, 315.97 ],
         [ 1960, 316.91 ],
@@ -119,8 +121,13 @@
         [ 2010,  0.6621 ],
         [ 2011,  0.5362 ],
     ];
+    
+    Flotr.draw(
+      document.getElementById("chart"),
+      [{data: co2, lines: {show:true}}]
+    );
 
-
+  };
     </script>
   </body>
 </html>
