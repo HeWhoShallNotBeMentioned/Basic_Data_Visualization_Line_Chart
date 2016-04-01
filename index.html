@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Detroit Tiger Wins by Year</title>
+    <title>Global Temperature and CO2 Concentration (NOAA Data)</title>
   </head>
   <body>
     <div id="chart" style="width:800px;height:400px;"></div>
@@ -121,10 +121,13 @@
         [ 2010,  0.6621 ],
         [ 2011,  0.5362 ],
     ];
+    var zero = [];
+    for (var yr = 1959; yr < 2012; yr++) { zero.push([yr, 0]); };
 
     Flotr.draw(
       document.getElementById("chart"),
       [
+        {data: zero, lines: {show:true, lineWidth:1}, yaxis:2, shadowSize: 0, color: "#545454"},
         {data: co2, lines: {show:true}},
         {data: temp, lines: {show:true}, yaxis: 2}
       ],
